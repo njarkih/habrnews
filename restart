@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo docker stop botc
+sudo docker rm botc
+sudo docker image rm --force bot
+sudo docker build -t bot  bot-docker/
+sudo docker run -d -p 8000:8000 --name botc bot
+sudo docker stop fast-apic
+sudo docker rm fast-apic
+sudo docker image rm --force fast-api
+sudo docker build -t fast-api  fast-api/
+sudo docker run -d -p 80:80 --name fast-apic fast-api
