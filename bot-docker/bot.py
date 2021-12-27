@@ -9,7 +9,7 @@ def get_keyboard():
     keyboard.add(btcbutton)
     return keyboard
 
-API_TOKEN = '942235718:AAG0SFX8rTG0c0cQwI8pURteQFFkslU_Avc'
+API_TOKEN = ''
 
 logging.basicConfig(level=logging.INFO)
 
